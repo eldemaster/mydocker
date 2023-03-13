@@ -1,0 +1,6 @@
+version: '3' 
+
+services: 
+    youtube-dl-ubuntu:  
+      image: /home/eldemaster/projects/mydocker/youtube-dl
+      build: . 
