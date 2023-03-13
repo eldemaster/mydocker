@@ -1,7 +1,8 @@
 FROM ubuntu:16.04 
 
 WORKDIR /mydir 
-RUN apt-get update && apt-get install -y wget 
+RUN apt-get update
+RUN apt-get install -y wget 
 RUN apt-get install -y curl 
 RUN apt-get install -y python 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
