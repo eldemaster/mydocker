@@ -4,3 +4,6 @@ services:
     youtube-dl:  
       image: youtube-dl
       build: . 
+      volumes: 
+        - .:/mydir
+      container_name: youtube-dl
