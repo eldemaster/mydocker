@@ -1,9 +1,6 @@
-FROM alpine:3.7
+FROM arm64v8/alpine
 
-WORKDIR /mydir 
-RUN apk update
-
-RUN touch hello.txt 
-COPY local.txt . 
-
-CMD ["/bin/bash"]
+WORKDIR /usr
+RUN mkdir /local \
+    && mkdir /local/bin \
+    && mkdir /local/bin/youtube-dl 
