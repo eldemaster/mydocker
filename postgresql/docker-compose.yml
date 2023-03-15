@@ -1,0 +1,25 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: example
+    volumes:
+      - ./database:/var/lib/postgresql/data
+  frontend:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+  backend:
+    build: ./backend
+    restart: always
+    environment:
+      DB_HOST: db
+    depends_on:
+      - db
