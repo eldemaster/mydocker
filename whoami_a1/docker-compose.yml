@@ -4,4 +4,4 @@ services:
     whoami: 
       image: huagang/whoami:v0.0.1
       ports: 
-        - 8000:8000
+        - 8000:8000 
