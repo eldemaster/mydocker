@@ -2,8 +2,13 @@ version: '3.5'
 
 services: 
     youtube-dl:  
-      image: youtube-dl
+      image: youtube-dl:latest
       build: . 
       volumes: 
-        - .:/mydir
+        - downloads:/mydir
       container_name: youtube-dl
+
+    volumes:
+      downloads:
+        driver: local
+

@@ -1,19 +1,16 @@
-FROM golang AS build
+# syntax=docker/dockerfile:1.2
+FROM golang:1-alpine as builder
 
-ARG arch=arm64
+RUN apk --no-cache --no-progress add git ca-certificates tzdata make \
+    && update-ca-certificates \
+    && rm -rf /var/cache/apk/*
 
-COPY . /code
-WORKDIR /code
-
-ENV GOARM 6
-
-RUN go get -d ./...
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=$arch go build -a -installsuffix cgo http.go
-
+# syntax=docker/dockerfile:1.2
+# Create a minimal container to run a Golang static binary
 FROM scratch
 
-COPY --from=build /code/http /http
+COPY --from=builder /usr/share/zoneinfo /usr/share/zoneinfo
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
-EXPOSE 8080
-
-CMD ["/http"]
+ENTRYPOINT ["/whoami"]
+EXPOSE 80

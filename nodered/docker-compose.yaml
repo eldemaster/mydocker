@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+    node-red:
+        image: nodered/node-red:latest
+        container_name: nodered
+        restart: always
+        ports:
+            - 1882:1880
+        volumes:
+            - ./data:/data
+            - ./flows.json:/data/flows.json
+            - ./settings.js:/data/settings.js
+        environment:
+            - TZ=Europe/London
+        networks:
+            - nodered
+
+
+

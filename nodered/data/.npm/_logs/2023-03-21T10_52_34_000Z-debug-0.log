@@ -1,0 +1,385 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.11.0
+2 info using node@v16.16.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 6ms
+6 timing config:load:builtin Completed in 6ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 1ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 2ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+15 timing config:load:global Completed in 1ms
+16 timing config:load:validate Completed in 0ms
+17 timing config:load:credentials Completed in 0ms
+18 timing config:load:setEnvs Completed in 3ms
+19 timing config:load Completed in 15ms
+20 timing npm:load:configload Completed in 15ms
+21 timing npm:load:mkdirpcache Completed in 0ms
+22 timing npm:load:mkdirplogs Completed in 0ms
+23 verbose title npm install node-red-contrib-smartlifeair@1.0.12
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-contrib-smartlifeair@1.0.12"
+25 timing npm:load:setTitle Completed in 1ms
+26 timing config:load:flatten Completed in 1ms
+27 timing npm:load:display Completed in 2ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2023-03-21T10_52_34_000Z-debug-0.log
+30 timing npm:load:logFile Completed in 3ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 21ms
+34 timing arborist:ctor Completed in 0ms
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 60ms
+37 timing idealTree:userRequests Completed in 1ms
+38 silly idealTree buildDeps
+39 silly fetch manifest node-red-contrib-smartlifeair@1.0.12
+40 timing arborist:ctor Completed in 0ms
+41 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-smartlifeair 916ms (cache miss)
+42 silly placeDep ROOT node-red-contrib-smartlifeair@1.0.12 OK for: node-red-project@0.0.1 want: 1.0.12
+43 silly fetch manifest firebase@^7.8.0
+44 http fetch GET 200 https://registry.npmjs.org/firebase 9251ms (cache miss)
+45 timing idealTree:#root Completed in 10272ms
+46 silly placeDep ROOT firebase@7.24.0 OK for: node-red-contrib-smartlifeair@1.0.12 want: ^7.8.0
+47 silly fetch manifest @firebase/app@0.6.11
+48 silly fetch manifest @firebase/app-types@0.6.1
+49 silly fetch manifest @firebase/auth@0.15.0
+50 silly fetch manifest @firebase/database@0.6.13
+51 silly fetch manifest @firebase/firestore@1.18.0
+52 silly fetch manifest @firebase/functions@0.5.1
+53 silly fetch manifest @firebase/installations@0.4.17
+54 silly fetch manifest @firebase/messaging@0.7.1
+55 silly fetch manifest @firebase/polyfill@0.3.36
+56 silly fetch manifest @firebase/storage@0.3.43
+57 silly fetch manifest @firebase/performance@0.4.2
+58 silly fetch manifest @firebase/remote-config@0.1.28
+59 silly fetch manifest @firebase/analytics@0.6.0
+60 silly fetch manifest @firebase/util@0.3.2
+61 http fetch GET 200 https://registry.npmjs.org/@firebase%2fremote-config 10065ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/@firebase%2fstorage 15211ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/@firebase%2fanalytics 21986ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/@firebase%2fapp 31097ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/@firebase%2fmessaging 40566ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/@firebase%2futil 53842ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/@firebase%2fpolyfill 59840ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/@firebase%2finstallations 66847ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/@firebase%2fperformance 120266ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/@firebase%2fapp-types 137296ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/@firebase%2ffunctions 166357ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/@firebase%2fdatabase 194890ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/@firebase%2ffirestore 233830ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/@firebase%2fauth 335885ms (cache miss)
+75 timing idealTree:node_modules/node-red-contrib-smartlifeair Completed in 335996ms
+76 silly placeDep ROOT @firebase/analytics@0.6.0 OK for: firebase@7.24.0 want: 0.6.0
+77 silly placeDep ROOT @firebase/app@0.6.11 OK for: @firebase/analytics@0.6.0 want: 0.x
+78 silly placeDep ROOT @firebase/app-types@0.6.1 OK for: @firebase/analytics@0.6.0 want: 0.x
+79 silly placeDep ROOT @firebase/auth@0.15.0 OK for: firebase@7.24.0 want: 0.15.0
+80 silly placeDep ROOT @firebase/database@0.6.13 OK for: firebase@7.24.0 want: 0.6.13
+81 silly placeDep ROOT @firebase/firestore@1.18.0 OK for: firebase@7.24.0 want: 1.18.0
+82 silly placeDep ROOT @firebase/functions@0.5.1 OK for: firebase@7.24.0 want: 0.5.1
+83 silly placeDep ROOT @firebase/installations@0.4.17 OK for: firebase@7.24.0 want: 0.4.17
+84 silly placeDep ROOT @firebase/messaging@0.7.1 OK for: firebase@7.24.0 want: 0.7.1
+85 silly placeDep ROOT @firebase/performance@0.4.2 OK for: firebase@7.24.0 want: 0.4.2
+86 silly placeDep ROOT @firebase/polyfill@0.3.36 OK for: firebase@7.24.0 want: 0.3.36
+87 silly placeDep ROOT @firebase/remote-config@0.1.28 OK for: firebase@7.24.0 want: 0.1.28
+88 silly placeDep ROOT @firebase/storage@0.3.43 OK for: firebase@7.24.0 want: 0.3.43
+89 silly placeDep ROOT @firebase/util@0.3.2 OK for: firebase@7.24.0 want: 0.3.2
+90 silly fetch manifest @firebase/analytics-types@0.4.0
+91 silly fetch manifest @firebase/logger@0.2.6
+92 silly fetch manifest @firebase/component@0.1.19
+93 silly fetch manifest tslib@^1.11.1
+94 silly fetch manifest dom-storage@2.1.0
+95 silly fetch manifest xmlhttprequest@1.8.0
+96 silly fetch manifest @firebase/auth-types@0.10.1
+97 silly fetch manifest @firebase/database-types@0.5.2
+98 silly fetch manifest @firebase/auth-interop-types@0.1.5
+99 silly fetch manifest faye-websocket@0.11.3
+100 silly fetch manifest @firebase/firestore-types@1.14.0
+101 silly fetch manifest @firebase/webchannel-wrapper@0.4.0
+102 silly fetch manifest @grpc/grpc-js@^1.0.0
+103 silly fetch manifest @grpc/proto-loader@^0.5.0
+104 silly fetch manifest node-fetch@2.6.1
+105 silly fetch manifest @firebase/functions-types@0.3.17
+106 silly fetch manifest @firebase/messaging-types@0.5.0
+107 silly fetch manifest @firebase/installations-types@0.3.4
+108 silly fetch manifest idb@3.0.2
+109 silly fetch manifest @firebase/performance-types@0.0.13
+110 silly fetch manifest core-js@3.6.5
+111 silly fetch manifest promise-polyfill@8.1.3
+112 silly fetch manifest whatwg-fetch@2.0.4
+113 silly fetch manifest @firebase/remote-config-types@0.1.9
+114 silly fetch manifest @firebase/storage-types@0.3.13
+115 http fetch GET 200 https://registry.npmjs.org/tslib 204ms (cache miss)
+116 http fetch GET 200 https://registry.npmjs.org/faye-websocket 220ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/xmlhttprequest 1889ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/dom-storage 1960ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/promise-polyfill 7017ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/whatwg-fetch 8149ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/@grpc%2fproto-loader 8404ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/idb 9259ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/@grpc%2fgrpc-js 10095ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/node-fetch 15471ms (cache revalidated)
+125 http fetch GET 200 https://registry.npmjs.org/@firebase%2fremote-config-types 17586ms (cache miss)
+126 http fetch GET 200 https://registry.npmjs.org/@firebase%2flogger 20890ms (cache miss)
+127 http fetch GET 200 https://registry.npmjs.org/@firebase%2fmessaging-types 21508ms (cache miss)
+128 http fetch GET 200 https://registry.npmjs.org/core-js 22314ms (cache miss)
+129 http fetch GET 200 https://registry.npmjs.org/@firebase%2fperformance-types 29001ms attempt #2 (cache miss)
+130 http fetch GET 200 https://registry.npmjs.org/@firebase%2ffirestore-types 38701ms (cache miss)
+131 http fetch GET 200 https://registry.npmjs.org/@firebase%2fanalytics-types 48388ms (cache miss)
+132 http fetch GET 200 https://registry.npmjs.org/@firebase%2fauth-types 55356ms (cache miss)
+133 http fetch GET 200 https://registry.npmjs.org/@firebase%2fdatabase-types 58955ms (cache miss)
+134 http fetch GET 200 https://registry.npmjs.org/@firebase%2fwebchannel-wrapper 60343ms (cache miss)
+135 http fetch GET 200 https://registry.npmjs.org/@firebase%2fauth-interop-types 133929ms (cache miss)
+136 http fetch GET 200 https://registry.npmjs.org/@firebase%2fcomponent 152370ms (cache miss)
+137 http fetch GET 200 https://registry.npmjs.org/@firebase%2ffunctions-types 164869ms (cache miss)
+138 timing idealTree:node_modules/firebase Completed in 164930ms
+139 silly placeDep ROOT @firebase/analytics-types@0.4.0 OK for: @firebase/analytics@0.6.0 want: 0.4.0
+140 silly placeDep ROOT @firebase/component@0.1.19 OK for: @firebase/analytics@0.6.0 want: 0.1.19
+141 silly placeDep ROOT @firebase/logger@0.2.6 OK for: @firebase/analytics@0.6.0 want: 0.2.6
+142 silly placeDep ROOT tslib@1.14.1 OK for: @firebase/analytics@0.6.0 want: ^1.11.1
+143 timing idealTree:node_modules/@firebase/analytics Completed in 12ms
+144 timing idealTree:node_modules/@firebase/analytics-types Completed in 0ms
+145 silly placeDep ROOT dom-storage@2.1.0 OK for: @firebase/app@0.6.11 want: 2.1.0
+146 silly placeDep ROOT xmlhttprequest@1.8.0 OK for: @firebase/app@0.6.11 want: 1.8.0
+147 timing idealTree:node_modules/@firebase/app Completed in 1ms
+148 timing idealTree:node_modules/@firebase/app-types Completed in 0ms
+149 silly fetch manifest @firebase/app-types@0.x
+150 silly fetch manifest @firebase/util@0.x
+151 silly placeDep ROOT @firebase/auth-types@0.10.1 OK for: @firebase/auth@0.15.0 want: 0.10.1
+152 timing idealTree:node_modules/@firebase/auth Completed in 24ms
+153 timing idealTree:node_modules/@firebase/auth-types Completed in 0ms
+154 timing idealTree:node_modules/@firebase/component Completed in 0ms
+155 silly placeDep ROOT @firebase/auth-interop-types@0.1.5 OK for: @firebase/database@0.6.13 want: 0.1.5
+156 silly placeDep ROOT @firebase/database-types@0.5.2 OK for: @firebase/database@0.6.13 want: 0.5.2
+157 silly placeDep ROOT faye-websocket@0.11.3 OK for: @firebase/database@0.6.13 want: 0.11.3
+158 silly fetch manifest websocket-driver@>=0.5.1
+159 http fetch GET 200 https://registry.npmjs.org/websocket-driver 77ms (cache miss)
+160 timing idealTree:node_modules/@firebase/database Completed in 82ms
+161 timing idealTree:node_modules/@firebase/auth-interop-types Completed in 0ms
+162 timing idealTree:node_modules/@firebase/database-types Completed in 0ms
+163 silly placeDep ROOT @firebase/firestore-types@1.14.0 OK for: @firebase/firestore@1.18.0 want: 1.14.0
+164 silly placeDep ROOT @firebase/webchannel-wrapper@0.4.0 OK for: @firebase/firestore@1.18.0 want: 0.4.0
+165 silly placeDep ROOT @grpc/grpc-js@1.8.12 OK for: @firebase/firestore@1.18.0 want: ^1.0.0
+166 silly placeDep ROOT @grpc/proto-loader@0.5.6 OK for: @firebase/firestore@1.18.0 want: ^0.5.0
+167 silly placeDep node_modules/@firebase/firestore node-fetch@2.6.1 OK for: @firebase/firestore@1.18.0 want: 2.6.1
+168 silly fetch manifest @grpc/proto-loader@^0.7.0
+169 silly fetch manifest @types/node@>=12.12.47
+170 silly fetch manifest protobufjs@^6.8.6
+171 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 1701ms (cache miss)
+172 http fetch GET 200 https://registry.npmjs.org/protobufjs 6081ms (cache miss)
+173 timing idealTree:node_modules/@firebase/firestore Completed in 6089ms
+174 timing idealTree:node_modules/@firebase/firestore-types Completed in 0ms
+175 silly placeDep ROOT @firebase/functions-types@0.3.17 OK for: @firebase/functions@0.5.1 want: 0.3.17
+176 silly placeDep ROOT @firebase/messaging-types@0.5.0 OK for: @firebase/functions@0.5.1 want: 0.5.0
+177 silly placeDep node_modules/@firebase/functions node-fetch@2.6.1 OK for: @firebase/functions@0.5.1 want: 2.6.1
+178 timing idealTree:node_modules/@firebase/functions Completed in 6ms
+179 timing idealTree:node_modules/@firebase/functions-types Completed in 0ms
+180 silly placeDep node_modules/@firebase/installations @firebase/installations-types@ OK for: @firebase/installations@0.4.17 want: 0.3.4
+181 silly placeDep ROOT idb@3.0.2 OK for: @firebase/installations@0.4.17 want: 3.0.2
+182 timing idealTree:node_modules/@firebase/installations Completed in 2ms
+183 timing idealTree:node_modules/@firebase/logger Completed in 0ms
+184 timing idealTree:node_modules/@firebase/messaging Completed in 0ms
+185 timing idealTree:node_modules/@firebase/messaging-types Completed in 0ms
+186 silly placeDep ROOT @firebase/performance-types@0.0.13 OK for: @firebase/performance@0.4.2 want: 0.0.13
+187 timing idealTree:node_modules/@firebase/performance Completed in 0ms
+188 timing idealTree:node_modules/@firebase/performance-types Completed in 0ms
+189 silly placeDep ROOT core-js@3.6.5 OK for: @firebase/polyfill@0.3.36 want: 3.6.5
+190 silly placeDep ROOT promise-polyfill@8.1.3 OK for: @firebase/polyfill@0.3.36 want: 8.1.3
+191 silly placeDep ROOT whatwg-fetch@2.0.4 OK for: @firebase/polyfill@0.3.36 want: 2.0.4
+192 timing idealTree:node_modules/@firebase/polyfill Completed in 1ms
+193 silly placeDep ROOT @firebase/remote-config-types@0.1.9 OK for: @firebase/remote-config@0.1.28 want: 0.1.9
+194 timing idealTree:node_modules/@firebase/remote-config Completed in 0ms
+195 timing idealTree:node_modules/@firebase/remote-config-types Completed in 0ms
+196 silly placeDep node_modules/@firebase/storage @firebase/storage-types@ OK for: @firebase/storage@0.3.43 want: 0.3.13
+197 timing idealTree:node_modules/@firebase/storage Completed in 4ms
+198 timing idealTree:node_modules/@firebase/util Completed in 0ms
+199 timing idealTree:node_modules/@firebase/webchannel-wrapper Completed in 0ms
+200 silly placeDep node_modules/@grpc/grpc-js @grpc/proto-loader@0.7.5 OK for: @grpc/grpc-js@1.8.12 want: ^0.7.0
+201 silly placeDep ROOT @types/node@18.15.5 OK for: @grpc/grpc-js@1.8.12 want: >=12.12.47
+202 silly fetch manifest @types/long@^4.0.1
+203 silly fetch manifest long@^4.0.0
+204 silly fetch manifest protobufjs@^7.0.0
+205 silly fetch manifest yargs@^16.2.0
+206 http fetch GET 200 https://registry.npmjs.org/yargs 89ms (cache miss)
+207 http fetch GET 200 https://registry.npmjs.org/long 106ms (cache miss)
+208 http fetch GET 200 https://registry.npmjs.org/@types%2flong 1543ms (cache miss)
+209 timing idealTree:node_modules/@grpc/grpc-js Completed in 1548ms
+210 silly placeDep ROOT protobufjs@6.11.3 OK for: @grpc/proto-loader@0.5.6 want: ^6.8.6
+211 silly fetch manifest @protobufjs/aspromise@^1.1.2
+212 silly fetch manifest @protobufjs/base64@^1.1.2
+213 silly fetch manifest @protobufjs/codegen@^2.0.4
+214 silly fetch manifest @protobufjs/eventemitter@^1.1.0
+215 silly fetch manifest @protobufjs/fetch@^1.1.0
+216 silly fetch manifest @protobufjs/float@^1.0.2
+217 silly fetch manifest @protobufjs/inquire@^1.1.0
+218 silly fetch manifest @protobufjs/path@^1.1.2
+219 silly fetch manifest @protobufjs/pool@^1.1.0
+220 silly fetch manifest @protobufjs/utf8@^1.1.0
+221 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2fpool 146ms (cache miss)
+222 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2ffloat 160ms (cache miss)
+223 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2futf8 612ms (cache miss)
+224 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2feventemitter 615ms (cache miss)
+225 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2fcodegen 1021ms (cache miss)
+226 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2fbase64 1024ms (cache miss)
+227 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2ffetch 1062ms (cache miss)
+228 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2fpath 1073ms (cache miss)
+229 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2finquire 1074ms (cache miss)
+230 http fetch GET 200 https://registry.npmjs.org/@protobufjs%2faspromise 1534ms (cache miss)
+231 timing idealTree:node_modules/@grpc/proto-loader Completed in 1536ms
+232 timing idealTree:node_modules/@types/node Completed in 0ms
+233 timing idealTree:node_modules/core-js Completed in 0ms
+234 timing idealTree:node_modules/dom-storage Completed in 0ms
+235 silly placeDep ROOT websocket-driver@0.7.4 OK for: faye-websocket@0.11.3 want: >=0.5.1
+236 silly fetch manifest http-parser-js@>=0.5.1
+237 silly fetch manifest websocket-extensions@>=0.1.1
+238 http fetch GET 200 https://registry.npmjs.org/http-parser-js 76ms (cache miss)
+239 http fetch GET 200 https://registry.npmjs.org/websocket-extensions 241ms (cache miss)
+240 timing idealTree:node_modules/faye-websocket Completed in 243ms
+241 timing idealTree:node_modules/idb Completed in 0ms
+242 timing idealTree:node_modules/promise-polyfill Completed in 0ms
+243 silly placeDep ROOT @protobufjs/aspromise@1.1.2 OK for: protobufjs@6.11.3 want: ^1.1.2
+244 silly placeDep ROOT @protobufjs/base64@1.1.2 OK for: protobufjs@6.11.3 want: ^1.1.2
+245 silly placeDep ROOT @protobufjs/codegen@2.0.4 OK for: protobufjs@6.11.3 want: ^2.0.4
+246 silly placeDep ROOT @protobufjs/eventemitter@1.1.0 OK for: protobufjs@6.11.3 want: ^1.1.0
+247 silly placeDep ROOT @protobufjs/fetch@1.1.0 OK for: protobufjs@6.11.3 want: ^1.1.0
+248 silly placeDep ROOT @protobufjs/float@1.0.2 OK for: protobufjs@6.11.3 want: ^1.0.2
+249 silly placeDep ROOT @protobufjs/inquire@1.1.0 OK for: protobufjs@6.11.3 want: ^1.1.0
+250 silly placeDep ROOT @protobufjs/path@1.1.2 OK for: protobufjs@6.11.3 want: ^1.1.2
+251 silly placeDep ROOT @protobufjs/pool@1.1.0 OK for: protobufjs@6.11.3 want: ^1.1.0
+252 silly placeDep ROOT @protobufjs/utf8@1.1.0 OK for: protobufjs@6.11.3 want: ^1.1.0
+253 silly placeDep ROOT @types/long@4.0.2 OK for: protobufjs@6.11.3 want: ^4.0.1
+254 silly placeDep ROOT long@4.0.0 OK for: protobufjs@6.11.3 want: ^4.0.0
+255 timing idealTree:node_modules/protobufjs Completed in 5ms
+256 timing idealTree:node_modules/@protobufjs/aspromise Completed in 0ms
+257 timing idealTree:node_modules/@protobufjs/base64 Completed in 0ms
+258 timing idealTree:node_modules/@protobufjs/codegen Completed in 0ms
+259 timing idealTree:node_modules/@protobufjs/eventemitter Completed in 0ms
+260 timing idealTree:node_modules/@protobufjs/fetch Completed in 0ms
+261 timing idealTree:node_modules/@protobufjs/float Completed in 0ms
+262 timing idealTree:node_modules/@protobufjs/inquire Completed in 0ms
+263 timing idealTree:node_modules/@protobufjs/path Completed in 0ms
+264 timing idealTree:node_modules/@protobufjs/pool Completed in 0ms
+265 timing idealTree:node_modules/@protobufjs/utf8 Completed in 0ms
+266 timing idealTree:node_modules/@types/long Completed in 0ms
+267 timing idealTree:node_modules/long Completed in 0ms
+268 timing idealTree:node_modules/tslib Completed in 0ms
+269 silly placeDep ROOT http-parser-js@0.5.8 OK for: websocket-driver@0.7.4 want: >=0.5.1
+270 silly placeDep ROOT websocket-extensions@0.1.4 OK for: websocket-driver@0.7.4 want: >=0.1.1
+271 timing idealTree:node_modules/websocket-driver Completed in 1ms
+272 timing idealTree:node_modules/http-parser-js Completed in 0ms
+273 timing idealTree:node_modules/websocket-extensions Completed in 0ms
+274 timing idealTree:node_modules/whatwg-fetch Completed in 0ms
+275 timing idealTree:node_modules/xmlhttprequest Completed in 0ms
+276 timing idealTree:node_modules/@firebase/firestore/node_modules/node-fetch Completed in 0ms
+277 timing idealTree:node_modules/@firebase/functions/node_modules/node-fetch Completed in 0ms
+278 timing idealTree:node_modules/@firebase/installations/node_modules/@firebase/installations-types Completed in 0ms
+279 timing idealTree:node_modules/@firebase/storage/node_modules/@firebase/storage-types Completed in 0ms
+280 silly placeDep node_modules/@grpc/grpc-js protobufjs@7.2.2 OK for: @grpc/proto-loader@0.7.5 want: ^7.0.0
+281 silly placeDep ROOT yargs@16.2.0 OK for: @grpc/proto-loader@0.7.5 want: ^16.2.0
+282 silly fetch manifest long@^5.0.0
+283 silly fetch manifest cliui@^7.0.2
+284 silly fetch manifest escalade@^3.1.1
+285 silly fetch manifest get-caller-file@^2.0.5
+286 silly fetch manifest require-directory@^2.1.1
+287 silly fetch manifest string-width@^4.2.0
+288 silly fetch manifest y18n@^5.0.5
+289 silly fetch manifest yargs-parser@^20.2.2
+290 http fetch GET 200 https://registry.npmjs.org/get-caller-file 40ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/escalade 78ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/require-directory 79ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/string-width 79ms (cache miss)
+294 http fetch GET 200 https://registry.npmjs.org/y18n 83ms (cache miss)
+295 http fetch GET 200 https://registry.npmjs.org/cliui 86ms (cache miss)
+296 http fetch GET 200 https://registry.npmjs.org/yargs-parser 85ms (cache miss)
+297 timing idealTree:node_modules/@grpc/grpc-js/node_modules/@grpc/proto-loader Completed in 91ms
+298 silly placeDep ROOT cliui@7.0.4 OK for: yargs@16.2.0 want: ^7.0.2
+299 silly placeDep ROOT escalade@3.1.1 OK for: yargs@16.2.0 want: ^3.1.1
+300 silly placeDep ROOT get-caller-file@2.0.5 OK for: yargs@16.2.0 want: ^2.0.5
+301 silly placeDep ROOT require-directory@2.1.1 OK for: yargs@16.2.0 want: ^2.1.1
+302 silly placeDep ROOT string-width@4.2.3 OK for: yargs@16.2.0 want: ^4.2.0
+303 silly placeDep ROOT y18n@5.0.8 OK for: yargs@16.2.0 want: ^5.0.5
+304 silly placeDep ROOT yargs-parser@20.2.9 OK for: yargs@16.2.0 want: ^20.2.2
+305 silly fetch manifest strip-ansi@^6.0.0
+306 silly fetch manifest wrap-ansi@^7.0.0
+307 silly fetch manifest emoji-regex@^8.0.0
+308 silly fetch manifest is-fullwidth-code-point@^3.0.0
+309 silly fetch manifest strip-ansi@^6.0.1
+310 http fetch GET 200 https://registry.npmjs.org/strip-ansi 67ms (cache miss)
+311 http fetch GET 200 https://registry.npmjs.org/strip-ansi 73ms (cache miss)
+312 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 88ms (cache miss)
+313 http fetch GET 200 https://registry.npmjs.org/emoji-regex 87ms (cache miss)
+314 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 873ms (cache miss)
+315 timing idealTree:node_modules/yargs Completed in 884ms
+316 silly placeDep ROOT strip-ansi@6.0.1 OK for: cliui@7.0.4 want: ^6.0.0
+317 silly placeDep ROOT wrap-ansi@7.0.0 OK for: cliui@7.0.4 want: ^7.0.0
+318 silly fetch manifest ansi-regex@^5.0.1
+319 silly fetch manifest ansi-styles@^4.0.0
+320 http fetch GET 200 https://registry.npmjs.org/ansi-styles 48ms (cache miss)
+321 http fetch GET 200 https://registry.npmjs.org/ansi-regex 50ms (cache miss)
+322 timing idealTree:node_modules/cliui Completed in 53ms
+323 timing idealTree:node_modules/escalade Completed in 0ms
+324 timing idealTree:node_modules/get-caller-file Completed in 0ms
+325 timing idealTree:node_modules/require-directory Completed in 0ms
+326 silly placeDep ROOT emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+327 silly placeDep ROOT is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+328 timing idealTree:node_modules/string-width Completed in 8ms
+329 timing idealTree:node_modules/emoji-regex Completed in 0ms
+330 timing idealTree:node_modules/is-fullwidth-code-point Completed in 1ms
+331 silly placeDep ROOT ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+332 timing idealTree:node_modules/strip-ansi Completed in 0ms
+333 timing idealTree:node_modules/ansi-regex Completed in 0ms
+334 silly placeDep ROOT ansi-styles@4.3.0 OK for: wrap-ansi@7.0.0 want: ^4.0.0
+335 silly fetch manifest color-convert@^2.0.1
+336 http fetch GET 200 https://registry.npmjs.org/color-convert 49ms (cache miss)
+337 timing idealTree:node_modules/wrap-ansi Completed in 50ms
+338 silly placeDep ROOT color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+339 silly fetch manifest color-name@~1.1.4
+340 http fetch GET 200 https://registry.npmjs.org/color-name 35ms (cache miss)
+341 timing idealTree:node_modules/ansi-styles Completed in 38ms
+342 silly placeDep ROOT color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+343 timing idealTree:node_modules/color-convert Completed in 0ms
+344 timing idealTree:node_modules/color-name Completed in 0ms
+345 timing idealTree:node_modules/y18n Completed in 0ms
+346 timing idealTree:node_modules/yargs-parser Completed in 0ms
+347 silly placeDep node_modules/@grpc/grpc-js/node_modules/protobufjs long@5.2.1 OK for: protobufjs@7.2.2 want: ^5.0.0
+348 timing idealTree:node_modules/@grpc/grpc-js/node_modules/protobufjs Completed in 1ms
+349 timing idealTree:node_modules/@grpc/grpc-js/node_modules/protobufjs/node_modules/long Completed in 0ms
+350 timing idealTree:buildDeps Completed in 521886ms
+351 timing idealTree:fixDepFlags Completed in 2ms
+352 timing idealTree Completed in 521951ms
+353 timing command:install Completed in 521954ms
+354 verbose type system
+355 verbose stack FetchError: Invalid response body while trying to fetch https://registry.npmjs.org/@firebase%2finstallations-types: Socket timeout
+355 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/minipass-fetch/lib/body.js:168:15
+355 verbose stack     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+355 verbose stack     at async RegistryFetcher.packument (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:99:25)
+355 verbose stack     at async RegistryFetcher.manifest (/usr/local/lib/node_modules/npm/node_modules/pacote/lib/registry.js:124:23)
+355 verbose stack     at async Promise.all (index 29)
+355 verbose stack     at async Arborist.[buildDepStep] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1093:5)
+355 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:218:7)
+355 verbose stack     at async Promise.all (index 1)
+355 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:153:5)
+355 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:156:5)
+356 verbose cwd /data
+357 verbose Linux 5.15.0-67-generic
+358 verbose node v16.16.0
+359 verbose npm  v8.11.0
+360 error code ERR_SOCKET_TIMEOUT
+361 error errno ERR_SOCKET_TIMEOUT
+362 error network Invalid response body while trying to fetch https://registry.npmjs.org/@firebase%2finstallations-types: Socket timeout
+363 error network This is a problem related to network connectivity.
+363 error network In most cases you are behind a proxy or have bad network settings.
+363 error network
+363 error network If you are behind a proxy, please make sure that the
+363 error network 'proxy' config is set properly.  See: 'npm help config'
+364 verbose exit 1
+365 timing npm Completed in 522026ms
+366 verbose unfinished npm timer reify 1679395954067
+367 verbose unfinished npm timer reify:loadTrees 1679395954069
+368 verbose code 1
+369 error A complete log of this run can be found in:
+369 error     /data/.npm/_logs/2023-03-21T10_52_34_000Z-debug-0.log
