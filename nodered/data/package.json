@@ -5,6 +5,7 @@
     "dependencies": {
         "node-red-contrib-influxdb": "0.4.0",
         "node-red-contrib-loop": "^1.0.1",
+        "node-red-contrib-postgresql": "~0.12.0",
         "node-red-contrib-sensor-ds18b20": "0.1.0",
         "node-red-dashboard": "2.19.0",
         "node-red-node-email": "~1.18.4",

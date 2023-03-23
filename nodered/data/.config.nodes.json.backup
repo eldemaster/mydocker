@@ -416,26 +416,6 @@
             }
         }
     },
-    "node-red-contrib-google-action": {
-        "name": "node-red-contrib-google-action",
-        "version": "1.2.1",
-        "local": true,
-        "user": false,
-        "nodes": {
-            "google-action": {
-                "name": "google-action",
-                "types": [
-                    "google-action in",
-                    "google-action response"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-google-action",
-                "file": "/data/node_modules/node-red-contrib-google-action/google-action.js"
-            }
-        }
-    },
     "node-red-node-twitter": {
         "name": "node-red-node-twitter",
         "version": "1.2.0",
@@ -796,6 +776,25 @@
                 "user": false,
                 "module": "node-red-node-smooth",
                 "file": "/data/node_modules/node-red-node-smooth/17-smooth.js"
+            }
+        }
+    },
+    "node-red-contrib-loop": {
+        "name": "node-red-contrib-loop",
+        "version": "1.0.1",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "loop": {
+                "name": "loop",
+                "types": [
+                    "loop"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-loop",
+                "file": "/data/node_modules/node-red-contrib-loop/loop.js"
             }
         }
     }
