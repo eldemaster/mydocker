@@ -14,7 +14,20 @@
             },
             "tours": {
                 "welcome": "3.0.2"
+            },
+            "context": {
+                "flowRefresh": false
             }
+        },
+        "menu-menu-item-palette": true,
+        "debug": {
+            "filter": "filterSelected",
+            "filteredNodes": [
+                "01f30b44051272fe",
+                "eaa90100f769ae85",
+                "44779781.4190f8",
+                "72fddece.fac0d"
+            ]
         }
     }
 }
